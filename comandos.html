@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Open+Sans:wght@500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">       
+        <title>Comandos</title>
+    </head>
+    <body>
+        <header>
+            <div class="navigation-header1">
+                <img src="img/GitColorido.svg" alt="Logo">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="comandos.html">COMANDOS</a></li>
+                        <li><a href="fontes.html">FONTES</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>
+                        <li><a href="https://github.com/EdeerSantos">MEU GITHUB</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <header>
+            <div class="navigation-header2">
+                <h1>Comandos e suas funções</h1>
+            </div>
+        </header>
+        <main>
+            <article class="text-align">
+                <section>
+                    <h2>Entrar em um diretório:</h2>
+                    <p>Para você entrar em um diretório do sistema operacional usando o Git, você pode usar o "cd + o nome do diretório" que você quer entrar.</p>
+                    <strong><p>Comando: cd "Nome da Pasta"</p></strong>
+                    <p>O console vai entrar exatamente no diretório que o usuário declarou no console, claro, se o mesmo existir ou se o usuário o informou com o nome exatamente correto, se não existir ou estiver incorreto, o console informara que há um erro no comando.</p>
+                    <h2>Voltar um diretório:</h2>
+                    <p>Para você voltar para um diretório anterior ao que o usuário está, basta usar o "cd .." que irá retornar apenas um repositório.</p>
+                    <strong><p>Comando: cd ..</p></strong>
+                    <h2>Consultar qual pasta o Git está executando atualmente:</h2>
+                    <p>Para o usuário consultar a pasta que o Git está executando no momento, basta usar o comando:</p>
+                    <strong><p>Comando: pwd</p></strong>
+                    <p>Logo o console informara ao usuário a pasta que o Git está executando no momento.</p>
+                    <h2>Criar diretório:</h2>
+                    <p>Inicialmente, você pode criar uma pasta pelo aplicativo Git na interface do Windows usando o código "mkdir + o nome da pasta" basta você usar:</P>
+                    <p>Comando: mkdir "Nome da Pasta"</p>
+                    <p>É importante você saber em qual diretório o Git está executando no momento, pois o usuário pode criar uma pasta em um diretório aleatório e depois não o encontra, por isso é importante usar o comando citado acima, para saber a localização exata.</p>    
+                    <h2>Voltar até o diretório raiz:</h2>
+                    <p>Agora, para voltar ao diretório raiz do sistema operacional, temos o código "cd /", esse o fara retornar até a página raiz do seu sistema operacional, então é muito importante que o usuário saiba entrar nas pastas corretamente, porque se não será necessário o usuário saber o caminho de volta ao diretório do qual quer trabalhar. Usa-se:</p>
+                    <p>Comando: cd /</p>
+                    <h2>Inciar o git na pasta:</h2>
+                    <p>Para iniciar uma pasta git na pasta do seu projeto, basta o usuário apenas digitar na linha de comando:</p>
+                    <p>Comando: git init</p>
+                    <p>Assim será criado uma pasta que inicialmente fica oculta, mas o usuário pode mudar nas configurações do "Explorador de Arquivos" para exibir itens ocultos, logo vai enxergar a pasta com pouca opacidade, representado que a mesma seria uma pasta oculta.
+                    Exemplo: .git</p>
+                    <h2>Configurar NOME e EMAIL para o Git:</h2>
+                    <p>Bom, já no caso do comando "git config" posso dizer que é um código um pouco mais difícil de lembrar, eu mesmo já os deixo pré salvos com meu nome e email para apenas copiar e colar (quando uso o "git config --local"). Com isso basta apenas você copiar os dois códigos juntos e colar no Git usando o TAB+insert (colar). O usuário pode usar os seguintes comandos:
+                    <strong><p>Comando: git config --local user.name "Seu Nome"</p></strong>
+                    <strong><p>Comando: git config --local user.email "Seu Email"</p></strong>
+                    <p>Nesse caso usando o direcionamento "--local", que quer dizer que seu nome e email de configuração, ficarão salvos apenas na pasta do seu projeto, isso quer dizer que sempre que você iniciar um novo projeto, será necessário você digitar os mesmos comandos para registrar seu usuário e email.
+                    Outra opção e mais indicada, é o uso do "--global" que além de registrar seu nome e email no computador de modo geral, sempre que você começar um projeto novo, seus prejetos sempre ficarão registrados nesse nome e email que você já havia registrado inicialmente. Estes seriam:
+                    Comando: git config --global user.name "Seu Nome"
+                    Comando: git config --global user.email "Seu Email"</p>
+                    <h2>Verificar estado do repositório:</h2>
+                    <p>Com isso temos o "git status" que é um dos comandos mais usados pelos usuário no Git, pois é sempre importante você saber sobre o status do seu repositório, o mesmo nos apresenta mudanças, erros ou arquivos e pastas que foram modificadas recentemente.</p>
+                    <p>git status</p>
+                    <h2>Rastrear mudanças de arquivos ou pastas do repositório Git:</h2>
+                    <p>Outro comando que é muito usado no Git é o "git add "Nome do Arquivo"" que após modificar ou adicionar novos arquivos ou pastas à pasta do seu projeto, como houve modificações na pasta raiz, o comando faz o git começar a rastrear os arquivos endereçados pelo usuário.</p>
+                    <p>git add "Nome do Arquivo"</p>
+                    <p>Outra opção de comando é o "git add .", esse é um comando bom e dinâmico pois se você realizou diversas mudanças no repositório raiz, ele ao invés de você precisar ficar listando cada arquivo ou pasta modificado, ao invés disso ele fara com que todos arquivos e pastas modificados sejam rastreados pelo aplicativo Git</p>
+                    <p>git add .</p>
+                    <p>Para endereçar a pasta do seu projeto ao repositório do GitHub (após o usuário ter criado um repositório no Github), basta você dar "git remote add origin"
+                    <p>git remote add origin "https://github.com/EdeerSantos/pt.git" (ESSE É SÓ UM EXEMPLO)</p>
+                    <p>Para desativar o enderaçamento</p>
+                    <strong><p>Comando: git remote rm origin</p></strong>
+                    <h2>Endereço do repositório</h2>
+                    <p>Para consultar o Endereço do repositório do Git</p>
+                    <p>git remote --v</p>
+                    <p>Para comitar o seu repositório (sem o VIN) que é a melhor forma de dar Commit.</p>
+                    <strong><p>Comando: git commit -m "Seu Commit"</p></strong>
+                    <p>Para mandar o Commit do local host (seu computador) para o remoto (GitHub), pode ser usado a branch main ou master, depende de qual seu projeto está endereçado.</p>
+                    <strong><p>Comando:git push origin master</p></strong>
+                    <strong><p>Comando: git push origin main</p></strong>
+                    <p>Se você quiser trazer o repositório do GitHub para o Local Host (seu computador)</p>
+                    <strong><p>Comando: git pull origin master</p></strong>
+                    <strong><p>Comando: git pull origin main</p></strong>
+                    <h2>Renomear commit:</h2>
+                    <p>Se você realizou um erro no commit você pode ronomea-lo.</p>
+                    <p>git commit --amend -m "Mensagem que Quiser Alterar"</p>
+                    <p>CLONAR O REPOSITÓRIO GIT PARA OUTRO LOCAL HOST</p>
+                    <strong><p>git clone "Endereço Github"</p></strong>
+                    <p>VER DIFERENÇAS DOS ARQUIVOS ANTERIORES PARA ESSA VERSÃO</p>
+                    <p>git log --full-diff</p>
+                    <p>GIT PULL PUXA DO REMOTO PARA O LOCAL</p>
+                    <p>git pull origin master</p>
+                    <h2>Localizar caminho atual:</h2>
+                    <p>Mostra em qual repositório está aberto atualmente.</p>
+                    <p>pwd</p>
+                    <h2>Mudar branch:</h2>
+                    <p>Muda a branch do repositório.</p>
+                    <p>git config --global init.deafaultbranch "main"</p>
+                    <h2>Lista de comandos:</h2>
+                    <p>Mostra quais comando são possíveis de serem usados</p>
+                    <strong><p>Comando: git log -h</p></strong>
+                    <h2>Log completo:</h2>
+                    <p>Ver um log completo, tudo na mesma tela</p>
+                    <strong><p>Comando: git log --oneline</p></strong>
+                    <h2>Localizar log por nome ou email:</h2>
+                    <p>Ver logs do autor por nome ou email.</p>
+                    <p>Comando: git log --author "nome da pessoa/email"</p>
+                    <h2>Localizar logs:</h2>
+                    <p>Ver logs com nome de busca específico.</p>
+                    <strong><p>Comnado: git log --grep "nome de busca"</p></strong>
+                    <h2>Log resumido:</h2>
+                    <p>Mostra o log de forma resumida</p>
+                    <strong><p>Comando: git shortlog</p></strong>
+                    <h2>Trocar nome do repositório</h2>
+                    <p>Muda o nome do repositório especificado</p>
+                    <strong><p>Comnado: git remote rename origin "Nome"</p></strong>
+                    <h2>Reset Soft:</h2>
+                    <p>O primeiro tipo de reset é utilizado com a opção soft e move apenas o ponteiro HEAD para algum outro commit, sem alterar a área de stage ou o diretório de working. É importante notar que, de fato, a operação moverá o branch para o qual o HEAD aponta e, por consequência, moverá também o ponteiro HEAD.</p>
+                    <strong><p>Comando: git reset HEAD~1 --soft</p></strong>
+                    <h2>Reset padrão:</h2>
+                    <p>O segundo tipo de reset pode ser utilizado com a opção mixed ou, por ser o tipo default, somente com o comando reset. Essa opção, além de mover o ponteiro HEAD, faz com que a área de stage contenha o mesmo snapshot do commit para o qual o ponteiro HEAD foi movido, porém não afeta o diretório de working.</p>
+                    <strong><p>Comando: git reset head~1</p></strong>
+                    <h2>Reset completo:</h2>
+                    <p>O terceiro e mais perigoso tipo de reset é utilizado com a opção hard e não apenas descarta as alterações na área de stage como também reverte todas as alterações no diretório de working para o estado do commit que foi especificado no comando.</p>
+                    <strong><p>Comando: git reset head~1 --hard</p></strong>
+                </section>
+            </article>
+        </main>
+        <footer class="footer">
+            <p class="p-color" id="p-color">© 2023 Edeer | Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</html>

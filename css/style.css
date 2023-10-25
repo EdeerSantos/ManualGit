@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "open-sans" sans-serif;
+}
+body{
+    background-color: #f4dec2;
+}
+.navigation-header1 img{
+    width: 45px;
+    transition: transform 100ms linear, opacity 200ms ease-in-out;
+}
+.navigation-header1 img:hover{
+    transform: scale(1.08);
+}
+.navigation-header1{
+    display: flex;
+    background-color: #fcf7f0;
+    height: 70px;
+    padding: 0px 25px;
+    align-items: center;
+    gap: 3em;
+}
+.navigation-header1 nav ul li a{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #919191;
+    font-weight: bold;
+}
+.navigation-header2{
+    display: flex;
+    background-color: #F1502F;
+    box-shadow: 0px 0.1px 0px #000;
+    height: 56px;
+    padding: 0px 100px;
+    align-items: center;
+    gap: 5em;
+}
+.navigation-header2 nav ul li a{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+nav ul li {
+    display: inline-block;
+    gap: 3em;
+    padding: 0px 0px 0px 30px;
+    transition: transform 100ms linear, opacity 200ms ease-in-out;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: #919191;
+    font-weight: bold;
+}
+nav ul li:hover{
+    transform: scale(1.08);
+}
+.text-align{
+    display: flex;
+    max-width: 992px;
+    min-width: 320px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    height: 50px;
+}
+footer p{
+    color: #fff;
+}
+h1{
+    font-weight: bold;
+    font-size: 35px;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+h2{
+    font-weight: bold;
+    font-size: 25px;
+    margin:40px 20px 20px 0px;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+p{
+    text-align:left;
+    font-size: 15px;
+    margin: 20px 0px 30px 0px;
+    font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+.container4 ol li{
+    font-size: 15px;
+}
+.footer-fix{
+    padding-bottom:587px;
+}
+.footer-fix2{
+    padding-bottom:402px;
+}
