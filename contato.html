@@ -10,28 +10,25 @@
         <title>Contato</title>
     </head>
     <body>
-        <header>
-            <div class="navigation-header1">
-                <img src="img/GitColorido.svg" alt="Logo">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="comandos.html">COMANDOS</a></li>
-                        <li><a href="fontes.html">FONTES</a></li>
-                        <li><a href="contato.html">CONTATO</a></li>
-                        <li><a href="https://github.com/EdeerSantos">MEU GITHUB</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <header class="top-bar">
+            <a href="index.html"><img src="img/GitColorido.svg" alt="Logo do GitHub"></a>
+            <nav>
+                <ul class="top-bar__list">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="comandos.html">COMANDOS</a></li>
+                    <li><a href="fontes.html">FONTES</a></li>
+                    <li><a href="contato.html">CONTATO</a></li>
+                </ul>
+            </nav>
         </header>
         <header>
-            <div class="navigation-header2">
+            <div class="middle-bar">
                 <h1>Contato</h1>
             </div>
         </header>
-        <main class="text-align">
-            <section class="form-area">  
-                <h2>Formulário para contato</h2>
+        <main class="container-6">
+            <h2 class="container-6__text">Formulário para contato</h2>
+            <section class="container-6__form-area"> 
                 <form action="">
                         <label for="nome">Nome</label>
                         <input type="text" id="nome" name="nome">
@@ -42,10 +39,12 @@
                 </form>
             </section>
         </main>
-        <div class="footer-fix2">
-        </div>
-        <footer class="footer">
-            <p class="p-color" id="p-color">© 2023 Edeer | Todos os direitos reservados.</p>
+        <footer class="bot-bar">
+            <p>© 2023 Edeer | Todos os direitos reservados.</p>
+            <a href="https://twitter.com/edersanti013"><img class="bot-bar__img-pad" src="img/tt.svg" alt=""></a>
+            <a href="https://www.youtube.com/channel/UCjkqRAuqrjsdlcH8-WTTedQ"><img src="img/yt.svg" alt=""></a>
+            <a href="https://www.facebook.com/profile.php?id=100069740587782&locale=pt_BR"><img src="img/fb.svg" alt=""></a>
+            <a href="https://github.com/EdeerSantos"><img src="img/gh.svg" alt=""></a>
         </footer>
     </body>
 </html>
